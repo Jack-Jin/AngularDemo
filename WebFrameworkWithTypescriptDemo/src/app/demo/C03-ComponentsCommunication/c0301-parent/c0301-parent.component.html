@@ -1,0 +1,6 @@
+<div>
+    <app-c0301-child [childMessage]="'Hello from parent.'"></app-c0301-child>
+</div>
+<div>
+    <app-c0301-child (messageEvent)="receiveMessage($event)"></app-c0301-child>
+</div>

@@ -1,0 +1,13 @@
+<table>
+    <tr>
+        <td [colSpan]="1+1"></td>
+        <!-- Wrong, because colspan is attribute NOT DOM property
+            <td colspan="{{ 1+1 }}"></td> 
+        -->
+    </tr>
+</table>
+
+<button [disabled]="isUnchangable">Disable Button</button>
+
+<img src="{{imageURL}}">    // Interpolation
+<img [src]="imageURL">      // Property Binding

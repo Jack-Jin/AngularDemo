@@ -1,0 +1,20 @@
+<app-c11-child [(size)]="fontSizePx"></app-c11-child>
+<!-- <app-c11-child [size]="fontSizePx" (sizeChange)="fontzize($event)"></app-c11-child> -->
+<p [style.font-size.px]="fontSizePx">Resizable text {{ fontSizePx }}</p>
+
+<!-- #phone is template variable -->
+<div>
+    <input #phone placeholder="phone">
+    <button (click)="callPhone(phone.value)">Call Phone</button>
+    <ng-template ngIf="true">
+        {{ phone.value }}
+    </ng-template>
+
+    <!-- doesn't work , template variable scope issue.-->
+    <ng-template ngIf="true">
+        <input #ref1 type="text" />
+    </ng-template>
+    <!-- out of ref1 scope -->
+    <!-- {{ ref1.value }} -->
+
+</div>
