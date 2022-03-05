@@ -1,16 +1,6 @@
-# AngularCrash
+# AngularMaterial
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
-
-## YouTube source
-
-https://www.youtube.com/watch?v=3dHNOWTI7H8&list=PLtWOB7T-oYTdBPpuRQNqFo4MqUlOTQP0T&index=7&t=1159s
-
-## Json Server
-
-`npm i json-server`
-"server": "json-server --watch db.json --port 5000" in package.json
-`npm run server`
 
 ## Development server
 
